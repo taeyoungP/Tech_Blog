@@ -1,5 +1,23 @@
-header, .project:not(:last-child) {
-  border-bottom: 1px solid #ccc;
+body {
+  background-color: rgb(234, 255, 222);
+}
+
+header, .post {
+  border: 3px solid rgb(54, 18, 18);
+  background-color: rgb(54, 18, 18);
+}
+
+.header {
+  background-color: rgb(54, 18, 18);
+}
+
+a {
+  color: white;
+}
+
+p {
+  background-color: rgb(234, 255, 222);
+  color:rgb(54, 18, 18);
 }
 
 .no-button {
@@ -7,13 +25,13 @@ header, .project:not(:last-child) {
   border: none;
   padding: 0;
   cursor: pointer;
-  color: #1b89bc;
+  color: rgb(234, 255, 222);
   text-decoration: none;
   font-size: 100%;
 }
 
 .no-button:hover {
-  color: #065b83;
+  color: rgb(178, 196, 167);
   text-decoration: underline;
 }
 
@@ -21,4 +39,14 @@ header, .project:not(:last-child) {
   color: #056605;
   font-weight: bold;
   margin-left: -5px;
+}
+
+.each-post{
+  background-color: gray;
+  border-radius: 10px;
+}
+
+.posted_by{
+  color: white;
+  font-size: 18px;
 }

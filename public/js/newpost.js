@@ -1,9 +1,9 @@
 const newFormHandler = async (event) => {
     event.preventDefault();
   
-    const title = document.querySelector('#project-name').value.trim();
+    const title = document.querySelector('#post-title').value.trim();
     //const needed_funding = document.querySelector('#project-funding').value.trim();
-    const content = document.querySelector('#project-desc').value.trim();
+    const content = document.querySelector('#post-content').value.trim();
   
     if (title && content) {
       const response = await fetch(`/api/posts`, {
@@ -23,5 +23,5 @@ const newFormHandler = async (event) => {
   };
 
   document
-  .querySelector('.new-project-form')
+  .querySelector('.new-post-form')
   .addEventListener('submit', newFormHandler);
