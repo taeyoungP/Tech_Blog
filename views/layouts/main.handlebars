@@ -12,19 +12,19 @@
 
 <body>
     <div class="flex-column justify-space-around">
-        <header class="display-flex justify-space-between align-center p-2">
+        <header class="display-flex justify-space-between p-2">
             <nav>
-                <a href="/">Home</a>
-                <a href="/dashboard">Dashboard</a>
+                <a href="/" class="menu">Home</a>
+                <a href="/dashboard" class="menu">Dashboard</a>
                 <!-- Conditionally render login or logout links -->
                 {{#if logged_in}}
-                <button class="no-button" id="logout">logout</button>
+                <button class="no-button menu" id="logout">logout</button>
                 {{else}}
-                <a href="/login">login</a>
+                <a href="/login" class="menu">login</a>
                 {{/if}}
             </nav>
             <h1>
-                <a href="/">The Tech Blog</a>
+                <a href="/" class="blog-name">The Tech Blog</a>
             </h1>
         </header>
         <main class="container container-fluid mt-5">

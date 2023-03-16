@@ -12,3 +12,7 @@ h1 {
     align-content: flex-start;
     flex-wrap: wrap;
 }
+
+.post {
+    border-radius: 10px;
+}

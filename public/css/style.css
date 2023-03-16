@@ -2,9 +2,38 @@ body {
   background-color: rgb(234, 255, 222);
 }
 
-header, .post {
+header {
   border: 3px solid rgb(54, 18, 18);
   background-color: rgb(54, 18, 18);
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  margin: 20px 10px;
+}
+
+.blog-name {
+  margin: 10px;
+  background-color: rgb(234, 255, 222);
+  color:rgb(54, 18, 18);
+  border-radius: 10px;
+  padding: 5px;
+  box-shadow: 5px 5px #9ba09b;
+}
+
+.post-title {
+  display: flex;
+  background-color: rgb(54, 18, 18);
+}
+
+.post {
+  border: 3px solid rgb(54, 18, 18);
+  border-radius: 5px;
+
 }
 
 .header {
@@ -13,11 +42,20 @@ header, .post {
 
 a {
   color: white;
+  margin: 5px;
+}
+
+.menu {
+  font-size: 28px !important; 
+  margin: 10px;
+  color: white !important;
 }
 
 p {
   background-color: rgb(234, 255, 222);
   color:rgb(54, 18, 18);
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .no-button {
@@ -43,10 +81,60 @@ p {
 
 .each-post{
   background-color: gray;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .posted_by{
   color: white;
-  font-size: 18px;
+  margin: 10px;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.blog-post {
+  border-radius: 5px;
+  border: 3px solid rgb(54, 18, 18);
+}
+
+.comments {
+  display: flex;
+  border: 3px solid rgb(54, 18, 18);
+  border-radius: 5px;
+  margin: 10px;
+  flex-direction: column;
+  line-height: 5px;
+}
+
+.title {
+  color: white;
+  background-color: rgb(54, 18, 18);
+  padding: 5px;
+}
+
+.comment-title {
+  padding: 20px;
+}
+
+.comment {
+  padding: 0;
+  margin: 10px;
+}
+
+.new-post {
+  display: flex;
+  justify-content: center;
+}
+
+.each-post {
+  text-align: center;
+}
+
+.new-post-btn {
+  background-color: rgb(54, 18, 18);
+  color: white;
+  font-size: 30px;
+  margin: 10% 0;
 }
