@@ -1,10 +1,8 @@
 # Tech Blog
 
-## Your Task
+## Task
 
-Writing about tech can be just as important as making it. Developers spend plenty of time creating new applications and debugging existing codebases, but most developers also spend at least some of their time reading and writing about technical concepts, recent advancements, and new technologies. A simple Google search for any concept covered in this course returns thousands of think pieces and tutorials from developers of all skill levels!
-
-The task for this project is to build a CMS-style blog site similar to a Wordpress site, where developers can publish their blog posts and comment on other developers’ posts as well. You’ll build this site completely from scratch and deploy it to Heroku. Your app will follow the MVC paradigm in its architectural structure, using Handlebars.js as the templating language, Sequelize as the ORM, and the express-session npm package for authentication.
+The task for this project is to build a CMS-style blog site similar to a Wordpress site, where developers can publish their blog posts and comment on other developers’ posts as well. This app follows the MVC paradigm in its architectural structure, using Handlebars.js as the templating language, Sequelize as the ORM, and the express-session npm package for authentication.
 
 ## User Story
 
@@ -52,81 +50,49 @@ WHEN I am idle on the site for more than a set time
 THEN I am able to view comments but I am prompted to log in again before I can add, update, or delete comments
 ```
 
-## Mock-Up
+## Descripton
 
-The following animation demonstrates the application functionality:
+ * [Link to deployed application](https://guarded-waters-21251.herokuapp.com)
 
-![Animation cycles through signing into the app, clicking on buttons, and updating blog posts.](./Assets/14-mvc-homework-demo-01.gif) 
+ * Homepage
+ ![homepage](./Assets/images/homepage.png)
 
-## Getting Started
+ * Login Page
+ ![login page](./Assets/images/login_page.png)
 
-Your application’s folder structure must follow the Model-View-Controller paradigm. You’ll need to use the [express-handlebars](https://www.npmjs.com/package/express-handlebars) package to implement Handlebars.js for your Views, use the [MySQL2](https://www.npmjs.com/package/mysql2) and [Sequelize](https://www.npmjs.com/package/sequelize) packages to connect to a MySQL database for your Models, and create an Express.js API for your Controllers.
+ * Signup Page
+ ![signup page](./Assets/images/signup.png)
 
-You’ll also need the [dotenv package](https://www.npmjs.com/package/dotenv) to use environment variables, the [bcrypt package](https://www.npmjs.com/package/bcrypt) to hash passwords, and the [express-session](https://www.npmjs.com/package/express-session) and [connect-session-sequelize](https://www.npmjs.com/package/connect-session-sequelize) packages to add authentication.
+ * Dashboard (Accessible once the user signed in.)
+ ![dashboard page](./Assets/images/dashboard.png)
 
-**Note**: The [express-session](https://www.npmjs.com/package/express-session) package stores the session data on the client in a cookie. When you are idle on the site for more than a set time, the cookie will expire and you will be required to log in again to start a new session. This is the default behavior and you do not have to do anything to your application other than implement the npm package.
+ * Create new post
+ ![create new post](./Assets/images/newpost.png)
 
-## Grading Requirements
+ * Update/Delete the post
+ ![update delete post page](./Assets/images/update_delete_post.png)
 
-> **Note**: If a Challenge assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
->
-> * A repository that has no code
->
-> * A repository that includes a unique name but nothing else
->
-> * A repository that includes only a README file but nothing else
->
-> * A repository that only includes starter code
+ * Add comment (This feature available to only logged in user.)
+ ![add comment](./Assets/images/comment.png)
 
-This Challenge is graded based on the following criteria:
 
-### Technical Acceptance Criteria: 40%
+## How to Use
 
-* Satisfies all of the preceding acceptance criteria plus the following:
+ * When user is not signed in, they can only read posts and comments from main homepage. Once user is signed in, they are available to create new post(s) or add comment(s) to the post(s). (User can also create new account.)
 
-    * Application’s folder structure follows the Model-View-Controller paradigm.
+ * When user is logged in, the page will redirect to main homepage.
 
-    * Uses the [express-handlebars](https://www.npmjs.com/package/express-handlebars) package to implement Handlebars.js for your Views.
+ * **Note** When user tries to update the post, update button works and the post will be updated, but the user needs to manually clicks back to dashboard or homepage. **Update button will not redirect the page to anywhere**. User can check their updated post from their dashboard or homepage.
 
-    * Application must be deployed to Heroku.
+## Credits
 
-### Deployment: 32%
-
-* Application deployed at live URL.
-
-* Application loads with no errors.
-
-* Application GitHub URL submitted.
-
-* GitHub repository contains application code.
-
-### Application Quality: 15%
-
-* User experience is intuitive and easy to navigate.
-
-* User interface style is clean and polished.
-
-* Application resembles the mock-up functionality provided in the Challenge instructions.
-
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality readme file with description, screenshot, and link to deployed application.
-
-## Review
-
-You are required to submit BOTH of the following for review:
-
-* The URL of the functional, deployed application.
-
-* The URL of the GitHub repository, with a unique name and a readme describing the project.
+ * [express-handlebars](https://www.npmjs.com/package/express-handlebars)
+ * [MySQL2](https://www.npmjs.com/package/mysql2)
+ * [Sequelize](https://www.npmjs.com/package/sequelize)
+ * [dotenv package](https://www.npmjs.com/package/dotenv)
+ * [bcrypt package](https://www.npmjs.com/package/bcrypt)
+ * [express-session](https://www.npmjs.com/package/express-session)
+ * [connect-session-sequelize](https://www.npmjs.com/package/connect-session-sequelize)
 
 ---
 © 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
