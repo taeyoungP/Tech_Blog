@@ -97,6 +97,8 @@ p {
 .blog-post {
   border-radius: 5px;
   border: 3px solid rgb(54, 18, 18);
+  display: flex;
+  flex-direction: column;
 }
 
 .comments {
@@ -108,10 +110,20 @@ p {
   line-height: 5px;
 }
 
+.add-comment {
+  display: flex;
+  border: 3px solid rgb(54, 18, 18);
+  border-radius: 5px;
+  padding: 10px;
+  flex-direction: column;
+  line-height: 5px;
+}
+
 .title {
   color: white;
   background-color: rgb(54, 18, 18);
   padding: 5px;
+  text-align: center;
 }
 
 .comment-title {
@@ -137,4 +149,16 @@ p {
   color: white;
   font-size: 30px;
   margin: 10% 0;
+}
+
+.btn.btn-primary {
+  background-color: rgb(54, 18, 18);
+}
+
+.new-post-form {
+  padding: 18px;
+}
+
+.submit-comment {
+  margin: 10px;
 }

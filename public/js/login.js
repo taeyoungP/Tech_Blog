@@ -13,11 +13,12 @@ const loginFormHandler = async (event) => {
       headers: { 'Content-Type': 'application/json' },
     });
 
+    //console.log(response);
+
     if (response.ok) {
-      // If successful, redirect the browser to the dashboard page
-      document.location.replace('/dashboard/');
-      //document.location.reload(); //Should reload aftter loggedin..??
-      //TODO********************
+      //window.location.reload(true);
+      //console.log(response);
+      document.location.replace('/');
     } else {
       alert(response.statusText);
     }
